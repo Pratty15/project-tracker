@@ -25,15 +25,29 @@ function App() {
 
       {/* VIEW SWITCH */}
       <div style={{ display: "flex", gap: "10px", margin: "10px" }}>
-        <button onClick={() => setView("kanban")} style={getTabStyle(view === "kanban")}>
-          Kanban
-        </button>
-        <button onClick={() => setView("list")} style={getTabStyle(view === "list")}>
-          List
-        </button>
-        <button onClick={() => setView("timeline")} style={getTabStyle(view === "timeline")}>
-          Timeline
-        </button>
+        <button
+  aria-label="Switch to Kanban view"
+  onClick={() => setView("kanban")}
+  style={getTabStyle(view === "kanban")}
+>
+  Kanban
+</button>
+
+<button
+  aria-label="Switch to List view"
+  onClick={() => setView("list")}
+  style={getTabStyle(view === "list")}
+>
+  List
+</button>
+
+<button
+  aria-label="Switch to Timeline view"
+  onClick={() => setView("timeline")}
+  style={getTabStyle(view === "timeline")}
+>
+  Timeline
+</button>
       </div>
 
       {view === "kanban" && <Kanban />}
