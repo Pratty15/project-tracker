@@ -67,6 +67,8 @@ Minimal DOM nodes using virtualization
 Memoization to reduce re-renders
 Optimized drag handling
 Lighthouse score: 85+
+<img width="1890" height="279" alt="image" src="https://github.com/user-attachments/assets/f5a9fd86-5a64-4404-8717-82de71146108" />
+
 
  Live Demo
 [https://project-tracker-pink-beta.vercel.app/]
